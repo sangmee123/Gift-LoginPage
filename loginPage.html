@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>추억을 로그인</title>
+    <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <img id="bgImg" src="image/background.JPG">
+    <section class="login-form">
+        <h1>추억을 로그인</h1>
+        <form action="">
+            <div class="int-area">
+                <input type="text" name="id", id="name-input" 
+                autocomplete="off" required>
+                <label for="id">ID</label>
+            </div>
+            <div class="int-area">
+                <input type="password" name="password", id="password-input" 
+                autocomplete="off" required>
+                <label for="password">PASSWORD</label>
+            </div>
+            
+            <a class="ori"><button class="btn-login" type="submit">LOGIN</button></a>
+
+            <div id="hint"><a href="hint.html" target='_blank'>Click to get a hint</a></div>
+        </form>
+    </section>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+    crossorigin="anonymous"></script>
+    <script src="js/loginPage.js"></script>
+</body>
+</html>

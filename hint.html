@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>당신에게 힌트를.</title>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            text-align: center;
+            background-color: #e3e3fa;
+        }
+
+        #marginTop {
+            margin-top: 100px;
+        }
+
+        .clickPASSWORD {
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        span {
+            font-size: 30px;
+            font-family: 'Sunflower', sans-serif;
+        }
+
+        span:hover {
+            color:blueviolet;
+        }
+    
+        li {
+            font-weight: lighter;
+            list-style: none;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="marginTop"><span class="clickID">당신의 ID는?</span></div>
+    <li id="id">귀하의 <b>성함</b>을 입력하시면 됩니다.</li>
+
+    <span class="clickPASSWORD">당신의 PASSWORD는?</span>
+    <li id="password">귀하의 <b>생년월일</b>을 입력하세요.</li>
+     
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+    crossorigin="anonymous"></script>
+    <script>
+        $('.clickID').on('click', hintID);
+        $('.clickPASSWORD').on('click', hintPASSWORD);
+
+        function hintID() {
+            $('#id').css('visibility', 'visible');
+        }
+
+        function hintPASSWORD() {
+            $('#password').css('visibility', 'visible');
+        }
+    </script>
+</body>
+</html>
