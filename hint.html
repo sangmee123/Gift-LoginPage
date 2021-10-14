@@ -10,9 +10,9 @@
             background-color: #e3e3fa;
         }
 
-        #marginTop {
-            margin-top: 100px;
-        }
+        #helper { height: 150px; }
+
+        #marginTop { margin-top: 100px; }
 
         .clickPASSWORD {
             display: inline-block;
@@ -20,7 +20,7 @@
         }
 
         span {
-            font-size: 30px;
+            font-size: 50px;
             font-family: 'Sunflower', sans-serif;
         }
 
@@ -30,6 +30,7 @@
     
         li {
             font-weight: lighter;
+            font-size: 20px;
             list-style: none;
             margin-top: 10px;
             margin-bottom: 20px;
@@ -39,12 +40,13 @@
 </head>
 
 <body>
+    <div id="helper"></div>
     <div id="marginTop"><span class="clickID">당신의 ID는?</span></div>
     <li id="id">귀하의 <b>성함</b>을 입력하시면 됩니다.</li>
 
     <span class="clickPASSWORD">당신의 PASSWORD는?</span>
     <li id="password">귀하의 <b>생년월일</b>을 입력하세요.</li>
-     
+    
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
     crossorigin="anonymous"></script>
