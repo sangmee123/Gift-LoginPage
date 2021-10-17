@@ -24,6 +24,10 @@ body {
     color: beige;
 }
 
+.int-area {
+    margin-bottom: 10px;
+}
+
 .int-area input {
     position: static;
     width: 95%;
@@ -37,7 +41,12 @@ body {
     color: rgb(37, 63, 52);
     position: relative;
     bottom: 33px;
-    left: 15px;
+    left: 10px;
+}
+
+.int-area input:focus + label,
+.int-area input:valid + label {
+    bottom: 70px;
 }
 
 .login-form .btn-login {
