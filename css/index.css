@@ -17,7 +17,13 @@ body {
     opacity: 0.75;
 }
 
-.login-form { width: 370px; }
+.login-form { 
+    width: 500px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+ }
 .login-form h1 {
     font-family: 'Sunflower', sans-serif;
     text-align: center;
@@ -25,6 +31,7 @@ body {
 }
 
 .int-area {
+    position: relative;
     margin-bottom: 10px;
 }
 
@@ -38,19 +45,23 @@ body {
     font-size: 18px;
 }
 .int-area label {
-    color: rgb(37, 63, 52);
-    position: relative;
+    position: absolute;
     left: 10px;
+    top: 11px;
+    color: rgb(37, 63, 52);
+    font-size: 19px;
+    transition: all .5s ease;
 }
 
 .int-area input:focus + label,
 .int-area input:valid + label {
-    bottom: 70px;
+    top: 0;
+    font-size: 13px;
 }
 
 .login-form .btn-login {
-    width: 100%;
-    height: 35px;
+    width: 95%;
+    height: 37px;
     border: none;
     border-radius: 20px;
     background-color: rgba(220, 220, 220, 0.733);
@@ -60,12 +71,11 @@ body {
 }
 .login-form .btn-login.on { background-color: #B4B4FF; }
 
-@media (max-width: 768px) {
-    #bgImg { 
-        width: 100%;
-        height: 100%;
-    }
+#hint {
+    margin-top: 10px;
+}
 
+@media (max-width: 768px) {
     .login-form {
         margin-top: auto;
         margin-bottom: auto;
@@ -79,29 +89,25 @@ body {
     .int-area {
         width: 450px;
     } .int-area label {
-        font-size: 30px;
+        font-size: 28px;
         font-weight: lighter;
-        margin-right: 30px;
-        bottom: 90px;
     } .int-area input {
         font-size: 33px;
-    } 
+        font-weight: lighter;
+    }
     .int-area input:focus + label,
     .int-area input:valid + label {
-        bottom: 110px;
+        top: 0;
+        font-size: 15px;
     }
 
+
+    .login-form .btn-login {
+        width: 435px;
+        height: 50px;
+    }
 }
 
 @media (min-width: 1024px) {
-    body {
-        height: 100vh;
-    }
 
-    .int-area label {
-        color: rgb(37, 63, 52);
-        position: relative;
-        bottom: 53px;
-        left: 10px;
-    }
 }
