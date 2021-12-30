@@ -4,12 +4,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 
 #bgImg {
-    background-size: cover;
     width: 100%;
+    height: auto;
+    background-size: cover;
     position: absolute;
     left: 0px;
     top: 0px;
@@ -71,9 +71,5 @@ body {
 @media (min-width: 1024px) {
     body {
         height: 100vh;
-    }
-
-    #bgImg {   
-        background-size: cover;
     }
 }
