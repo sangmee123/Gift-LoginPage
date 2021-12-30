@@ -9,7 +9,6 @@ body {
 #bgImg {
     width: 100%;
     height: auto;
-    background-size: cover;
     position: absolute;
     left: 0px;
     top: 0px;
@@ -101,13 +100,8 @@ body {
         font-size: 15px;
     }
 
-
     .login-form .btn-login {
         width: 435px;
         height: 50px;
     }
-}
-
-@media (min-width: 1024px) {
-
 }
