@@ -6,10 +6,9 @@ body {
     align-items: center;
 }
 
-#bgImg {
-    width: 100%;
-    height: auto;
-    position: absolute;
+#bgImg { 
+    background-size:cover;
+    background-position:50%;
     left: 0px;
     top: 0px;
     z-index: -1;
