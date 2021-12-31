@@ -9,10 +9,13 @@
             text-align: center;
             background-color: #e3e3fa;
         }
-
-        #helper { height: 150px; }
-
-        #marginTop { margin-top: 100px; }
+        
+        .center {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
 
         .clickPASSWORD {
             display: inline-block;
@@ -40,13 +43,13 @@
 </head>
 
 <body>
-    <div id="helper"></div>
-    <div id="marginTop"><span class="clickID">당신의 ID는?</span></div>
-    <li id="id">귀하의 <b>성함</b>을 입력하시면 됩니다.</li>
+    <div class="center">
+        <span class="clickID">당신의 ID는?</span>
+        <li id="id">귀하의 <b>성함</b>을 입력하시면 됩니다.</li>
 
-    <span class="clickPASSWORD">당신의 PASSWORD는?</span>
-    <li id="password">귀하의 <b>생년월일</b>을 입력하세요.</li>
-    <div id="helper"></div>
+        <span class="clickPASSWORD">당신의 PASSWORD는?</span>
+        <li id="password">귀하의 <b>생년월일</b>을 입력하세요.</li>
+    </div>
     
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
