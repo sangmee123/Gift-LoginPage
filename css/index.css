@@ -6,16 +6,6 @@ body {
     align-items: center;
 }
 
-#bgImg { 
-    background-size:cover;
-    width: 100%;
-    height: auto;
-    left: 0px;
-    top: 0px;
-    z-index: -1;
-    opacity: 0.75;
-}
-
 .login-form { 
     width: 500px;
     position: absolute;
@@ -72,47 +62,4 @@ body {
 
 #hint {
     margin-top: 10px;
-}
-
-@media (max-width: 768px) {
-    #bgImg { 
-        width: 100%;
-        height: 100%;
-        left: 0px;
-        top: 0px;
-        z-index: -1;
-        opacity: 0.75;
-    }
-    .login-form {
-        width: 50%;
-        height: 50%;
-        top: 0;
-        margin-left: auto;
-        margin-right: auto;
-    }.login-form h1 {
-        font-size: 50px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 60px;
-    }
-    
-    .int-area {
-        width: 450px;
-    } .int-area label {
-        font-size: 28px;
-        font-weight: lighter;
-    } .int-area input {
-        font-size: 33px;
-        font-weight: lighter;
-    }
-    .int-area input:focus + label,
-    .int-area input:valid + label {
-        top: 0;
-        font-size: 15px;
-    }
-
-    .login-form .btn-login {
-        width: 435px;
-        height: 50px;
-    }
 }
