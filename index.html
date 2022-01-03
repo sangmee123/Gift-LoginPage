@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
     <title>추억을 로그인</title>
     <meta charset="utf-8">
@@ -8,18 +8,18 @@
 </head>
 
 <body>
-    <form class="login-form">
-        <img class="img" src="image/loginBg.JPG">
+    <section class="login-form">
         <h1>추억을 로그인</h1>
-        <div class="int-area">
-            <input type="text" name="id", id="name-input" autocomplete="off" required>
-            <label>Username</label>
-        </div>
-        <div class="int-area">
-            <input type="password" name="password", id="password-input" autocomplete="off" required>
-            <label>Password</label>
-        </div>
-            
+        <form action="">
+            <div class="int-area">
+                <input type="text" name="id", id="name-input" autocomplete="off" required>
+                <label for="id">Username</label>
+            </div>
+            <div class="int-area">
+                <input type="password" name="password", id="password-input" autocomplete="off" required>
+                <label for="pw">Password</label>
+            </div>
+        </form>    
         <a class="ori"><button class="btn-login" type="submit">LOGIN</button></a>
 
         <div id="hint"><a href="hint.html" target='_blank'>Click to get a hint</a></div>
