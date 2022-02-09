@@ -14,7 +14,13 @@ function checkInput() {
 }
 
 //로그인을 한 후 다음 페이지로 넘어감
-$('.btn-login').on('click', function() {
+$('.btn-login').on('click', login);
+$(window).on('keypress', function(e) {
+    if(e.keyCode === 13)
+        login();
+});
+
+function login() {
     let id = $('#name-input').val();
     let password = $('#password-input').val();
     
@@ -22,4 +28,5 @@ $('.btn-login').on('click', function() {
         window.open('https://home-commemoration.netlify.app/');
     else if(id !== '이건주' || password !== '010418')
         alert('아이디 또는 패스워드가 잘못 입력 되었습니다.');
-})
+}
+

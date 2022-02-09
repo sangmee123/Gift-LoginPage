@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@500&display=swap');
 
-* { margin: 0; padding: 0; box-sizing: border-box; }
 body {
     display: flex;
     justify-content: center;
@@ -8,17 +7,18 @@ body {
     height: 100vh;
     background: url("/image/mountains.jpg");
     background-size: cover;
+    background-position: bottom;
 }
 
-.login-form { position: relative; z-index: 2; }
+.login-form { position: relative; z-index: 2; bottom: 80px; }
 .login-form h1 {
     font-family: 'Sunflower', sans-serif;
-    font-size: 40px;
+    font-size: 43px;
     text-align: center;
     color: beige;
-    text-shadow: 1.5px 1.5px 1.5px rgb(76, 136, 123);
+    text-shadow: 1.5px 1.5px 1.5px rgb(92, 177, 22);
     margin-top: 200px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .int-area input {
